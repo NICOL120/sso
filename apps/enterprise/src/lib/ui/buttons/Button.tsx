@@ -53,4 +53,3 @@ const Button = styled.button`
   &:active::before {
     scale: 0.7;
   }
-`;
