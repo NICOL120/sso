@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Button = styled.Button`
+const Button = styled.button`
   position: relative;
   width: 120px;
   height: 40px;
@@ -53,3 +53,6 @@ const Button = styled.Button`
   &:active::before {
     scale: 0.7;
   }
+};
+
+export default Button;
