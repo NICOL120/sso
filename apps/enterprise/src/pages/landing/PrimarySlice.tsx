@@ -18,7 +18,7 @@ export const PrimarySlice = () => {
         Nico Money Dao
       </Text>
       <HStack alignItems="center" gap={20}>
-        <Button
+        <button class="btn"
           onClick={() => {
             navigate('dashboard');
           }}
