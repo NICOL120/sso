@@ -4,7 +4,7 @@ import { useDisplay } from 'hooks';
 import { useNavigate } from 'react-router';
 import styles from './PrimarySlice.module.sass';
 import { ButtonContainer } from './ButtonContainer';
-
+import HStack from 'lib/ui/Stack/HStack';
 export const PrimarySlice = () => {
   const navigate = useNavigate();
 
