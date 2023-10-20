@@ -14,7 +14,7 @@ export const PrimarySlice = () => {
       <Text size={40} weight="bold">
         Nico Money Dao
       </Text>
-      <div className={styles.buttonContainer}> {/* Tambahkan container untuk tombol */}
+      <div className={styled.button}> {/* Tambahkan container untuk tombol */}
         <ButtonContainer
           onClick={() => {
             navigate('dashboard');
