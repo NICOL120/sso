@@ -24,10 +24,6 @@ export const PrimarySlice = () => {
           }}
         >
           Launch App
-        </button>
-        <button class="btn">
-    Button
-</button>
       </HStack>
     </div>
   );
