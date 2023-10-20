@@ -3,6 +3,7 @@ import { Text } from 'lib/ui/Text';
 import { useDisplay } from 'hooks';
 import { useNavigate } from 'react-router';
 import styles from './PrimarySlice.module.sass';
+import { ButtonContainer } from './ButtonContainer';
 
 export const PrimarySlice = () => {
   const navigate = useNavigate();
@@ -14,13 +15,13 @@ export const PrimarySlice = () => {
         Nico Money Dao
       </Text>
       <div className={styles.buttonContainer}> {/* Tambahkan container untuk tombol */}
-        <Button
+        <ButtonContainer
           onClick={() => {
             navigate('dashboard');
           }}
         >
           Launch App
-        </Button>
+        </ButtonContainer>
       </div>
     </div>
   );
