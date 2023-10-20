@@ -3,9 +3,7 @@ import { Text } from 'lib/ui/Text';
 import { useDisplay } from 'hooks';
 import { useNavigate } from 'react-router';
 import styles from './PrimarySlice.module.sass';
-import { Button } from 'lib/ui/buttons/Button';
-import { HStack } from 'lib/ui/Stack';
-import { ExternalLink } from 'components/link';
+import { ButtonContainer } from './ButtonContainer';
 
 export const PrimarySlice = () => {
   const navigate = useNavigate();
@@ -18,13 +16,14 @@ export const PrimarySlice = () => {
         Nico Money Dao
       </Text>
       <HStack alignItems="center" gap={20}>
-        <Button
+        {/* Ganti komponen Button dengan ButtonContainer */}
+        <ButtonContainer
           onClick={() => {
             navigate('dashboard');
           }}
         >
           Launch App
-        </Button>
+        </ButtonContainer>
       </HStack>
     </div>
   );
