@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-export const Button = styled.button`
+const Button = styled.button`
   position: relative;
   width: 120px;
   height: 40px;
@@ -51,5 +51,6 @@ export const Button = styled.button`
   }
 
   &:active::before {
-    transform: scale(0.7);
+    scale: 0.7;
   }
+`;
