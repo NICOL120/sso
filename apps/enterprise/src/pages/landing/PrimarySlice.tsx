@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import { Text } from 'lib/ui/Text';
 import { useDisplay } from 'hooks';
 import { useNavigate } from 'react-router';
-import styles from './PrimarySlice.module.sass';
+import styles from './PrimarySlice.module.css';
 import { HStack } from 'lib/ui/Stack';
 import { ExternalLink } from 'components/link';
 
