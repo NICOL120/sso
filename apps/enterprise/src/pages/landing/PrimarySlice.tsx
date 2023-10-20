@@ -3,7 +3,7 @@ import { Text } from 'lib/ui/Text';
 import { useDisplay } from 'hooks';
 import { useNavigate } from 'react-router';
 import styles from './PrimarySlice.module.sass';
-import { btn )'/Button.scss'; // Import the CSS file for the button style
+import { button } from '/Button.scss'; // Import the CSS file for the button style
 import { HStack } from 'lib/ui/Stack';
 import { ExternalLink } from 'components/link';
 
