@@ -3,10 +3,13 @@ import { Text } from 'lib/ui/Text';
 import { useDisplay } from 'hooks';
 import { useNavigate } from 'react-router';
 import styles from './PrimarySlice.module.sass';
-import ButtonContainer from './ButtonContainer';
+import { Button } from 'lib/ui/buttons/Button';
+import { HStack } from 'lib/ui/Stack';
+import { ExternalLink } from 'components/link';
 
 export const PrimarySlice = () => {
   const navigate = useNavigate();
+
   const { isMobile } = useDisplay();
 
   return (
@@ -14,15 +17,15 @@ export const PrimarySlice = () => {
       <Text size={40} weight="bold">
         Nico Money Dao
       </Text>
-      <div className={styles.buttonContainer}> {/* Menggunakan className yang sesuai */}
-        <ButtonContainer
+      <HStack alignItems="center" gap={20}>
+        <Button
           onClick={() => {
             navigate('dashboard');
           }}
         >
           Launch App
-        </ButtonContainer>
-      </div>
+        </Button>
+      </HStack>
     </div>
   );
 };
