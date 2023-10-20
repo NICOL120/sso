@@ -3,7 +3,7 @@ import { Text } from 'lib/ui/Text';
 import { useDisplay } from 'hooks';
 import { useNavigate } from 'react-router';
 import styles from './PrimarySlice.module.sass';
-import { Button } from 'lib/ui/buttons/Button';
+import { Button } from '/Button.scss';
 import { HStack } from 'lib/ui/Stack';
 import { ExternalLink } from 'components/link';
 
