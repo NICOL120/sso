@@ -73,7 +73,8 @@
   transition: clip-path 500ms;
 }
 
-.btn:where(:hover, :focus)::after {
+.btn:hover::after,
+.btn:focus::after {
   clip-path: polygon(
     /* Top-left */
     calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
@@ -88,6 +89,7 @@
   transition: 200ms;
 }
 
-.btn:where(:hover, :focus) {
+.btn:hover,
+.btn:focus {
   color: #fff;
 }
